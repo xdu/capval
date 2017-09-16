@@ -1,0 +1,33 @@
+﻿{ "val": "cash",                    "key": "Cash and cash equivalents" }
+{ "val": "shortTermInvest",         "key": "Short-term investments" }
+{ "val": "totalCash",               "key": "Total cash" }
+{ "val": "receivables",             "key": "Receivables" }
+{ "val": "otherCurrentAssets",      "key": "Other current assets" }
+{ "val": "totalCurrentAssets",      "key": "Total current assets" }
+{ "val": "grossProperty",           "key": "Gross property, plant and equipment" }
+{ "val": "depreciation",            "key": "Accumulated Depreciation" }
+{ "val": "netProperty",             "key": "Net property, plant and equipment" }
+{ "val": "intangibleAssets",        "key": "Intangible assets" }
+{ "val": "deferredIncomeTaxes",     "key": "Deferred income taxes" }
+{ "val": "otherLongTermAssets",     "key": "Other long-term assets" }
+{ "val": "totalNonCurrentAssets",   "key": "Total non-current assets" }
+{ "val": "totalAssets",             "key": "Total assets" }
+{ "val": "shortTermDebt",           "key": "Short-term debt" }
+{ "val": "capitalLeases",           "key": "Capital leases" }
+{ "val": "accountsPayable",         "key": "Accounts payable" }
+{ "val": "taxesPayable",            "key": "Taxes payable" }
+{ "val": "otherCurrentLiabilities", "key": "Other current liabilities" }
+{ "val": "totalCurrentLiabilities", "key": "Total current liabilities" }
+{ "val": "", "key": "Long-term debt" }
+{ "val": "", "key": "Capital leases," }
+{ "val": "", "key": "Deferred taxes liabilities" }
+{ "val": "", "key": "Pensions and other benefits" }
+{ "val": "", "key": "Other long-term liabilities" }
+{ "val": "", "key": "Total non-current liabilities" }
+{ "val": "", "key": "Total liabilities" }
+{ "val": "", "key": "Additional paid-in capital" }
+{ "val": "", "key": "Retained earnings" }
+{ "val": "", "key": "Treasury stock"
+{ "val": "", "key": "Accumulated other comprehensive income" }
+{ "val": "", "key": "Total stockholders' equity" }
+{ "val": "", "key": "Total liabilities and stockholders' equity" }
