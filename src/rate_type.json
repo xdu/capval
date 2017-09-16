@@ -1,0 +1,85 @@
+{"type":1, "description":"Financials -> Revenue USD Mil"}
+{"type":2, "description":"Financials -> Gross Margin %"}
+{"type":3, "description":"Financials -> Operating Income USD Mil"}
+{"type":4, "description":"Financials -> Operating Margin %"}
+{"type":5, "description":"Financials -> Net Income USD Mil"}
+{"type":6, "description":"Financials -> Earnings Per Share USD"}
+{"type":7, "description":"Financials -> Dividends USD"}
+{"type":8, "description":"Financials -> Payout Ratio % *"}
+{"type":9, "description":"Financials -> Shares Mil"}
+{"type":10, "description":"Financials -> Book Value Per Share * USD"}
+{"type":11, "description":"Financials -> Operating Cash Flow USD Mil"}
+{"type":12, "description":"Financials -> Cap Spending USD Mil"}
+{"type":13, "description":"Financials -> Free Cash Flow USD Mil"}
+{"type":14, "description":"Financials -> Free Cash Flow Per Share * USD"}
+{"type":15, "description":"Financials -> Working Capital USD Mil"}
+{"type":16, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Revenue"}
+{"type":17, "description":"Key Ratios -> Profitability -> Margins % of Sales -> COGS"}
+{"type":18, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Gross Margin"}
+{"type":19, "description":"Key Ratios -> Profitability -> Margins % of Sales -> SG&A"}
+{"type":20, "description":"Key Ratios -> Profitability -> Margins % of Sales -> R&D"}
+{"type":21, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Other"}
+{"type":22, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Operating Margin"}
+{"type":23, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Net Int Inc & Other"}
+{"type":24, "description":"Key Ratios -> Profitability -> Margins % of Sales -> EBT Margin"}
+{"type":25, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Tax Rate %"}
+{"type":26, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Net Margin %"}
+{"type":27, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Asset Turnover (Average)"}
+{"type":28, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Return on Assets %"}
+{"type":29, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Financial Leverage (Average)"}
+{"type":30, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Return on Equity %"}
+{"type":31, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Return on Invested Capital %"}
+{"type":32, "description":"Key Ratios -> Profitability -> Margins % of Sales -> Profitability -> Interest Coverage"}
+{"type":33, "description":"Key Ratios -> Growth -> Revenue % -> Year over Year"}
+{"type":34, "description":"Key Ratios -> Growth -> Revenue % -> 3-Year Average"}
+{"type":35, "description":"Key Ratios -> Growth -> Revenue % -> 5-Year Average"}
+{"type":36, "description":"Key Ratios -> Growth -> Revenue % -> 10-Year Average"}
+{"type":37, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Year over Year"}
+{"type":38, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> 3-Year Average"}
+{"type":39, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> 5-Year Average"}
+{"type":40, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> 10-Year Average"}
+{"type":41, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> Year over Year"}
+{"type":42, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> 3-Year Average"}
+{"type":43, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> 5-Year Average"}
+{"type":44, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> 10-Year Average"}
+{"type":45, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> EPS % -> Year over Year"}
+{"type":46, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> EPS % -> 3-Year Average"}
+{"type":47, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> EPS % -> 5-Year Average"}
+{"type":48, "description":"Key Ratios -> Growth -> Revenue % -> Operating Income % -> Net Income % -> EPS % -> 10-Year Average"}
+{"type":49, "description":"Key Ratios -> Cash Flow -> Cash Flow Ratios -> Operating Cash Flow Growth % YOY"}
+{"type":50, "description":"Key Ratios -> Cash Flow -> Cash Flow Ratios -> Free Cash Flow Growth % YOY"}
+{"type":51, "description":"Key Ratios -> Cash Flow -> Cash Flow Ratios -> Cap Ex as a % of Sales"}
+{"type":52, "description":"Key Ratios -> Cash Flow -> Cash Flow Ratios -> Free Cash Flow/Sales %"}
+{"type":53, "description":"Key Ratios -> Cash Flow -> Cash Flow Ratios -> Free Cash Flow/Net Income"}
+{"type":54, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Cash & Short-Term Investments"}
+{"type":55, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Accounts Receivable"}
+{"type":56, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Inventory"}
+{"type":57, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Other Current Assets"}
+{"type":58, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Current Assets"}
+{"type":59, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Net PP&E"}
+{"type":60, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Intangibles"}
+{"type":61, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Other Long-Term Assets"}
+{"type":62, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Assets"}
+{"type":63, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Accounts Payable"}
+{"type":64, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Short-Term Debt"}
+{"type":65, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Taxes Payable"}
+{"type":66, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Accrued Liabilities"}
+{"type":67, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Other Short-Term Liabilities"}
+{"type":68, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Current Liabilities"}
+{"type":69, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Long-Term Debt"}
+{"type":70, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Other Long-Term Liabilities"}
+{"type":71, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Liabilities"}
+{"type":72, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Stockholders' Equity"}
+{"type":73, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Total Liabilities & Equity"}
+{"type":74, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Liquidity/Financial Health -> Current Ratio"}
+{"type":75, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Liquidity/Financial Health -> Quick Ratio"}
+{"type":76, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Liquidity/Financial Health -> Financial Leverage"}
+{"type":77, "description":"Key Ratios -> Financial Health -> Balance Sheet Items (in %) -> Liquidity/Financial Health -> Debt/Equity"}
+{"type":78, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Days Sales Outstanding"}
+{"type":79, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Days Inventory"}
+{"type":80, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Payables Period"}
+{"type":81, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Cash Conversion Cycle"}
+{"type":82, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Receivables Turnover"}
+{"type":83, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Inventory Turnover"}
+{"type":84, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Fixed Assets Turnover"}
+{"type":85, "description":"Key Ratios -> Efficiency Ratios -> Efficiency -> Asset Turnover"}
