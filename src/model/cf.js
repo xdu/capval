@@ -7,13 +7,13 @@ var CashFlowSchema = new moogoose.Schema({
     date: Date,
     currency: String,
     
-    operationActivities: {
+    operatingActivities: {
         depreciation: Number,
         investments: Number,
         stockBasedCompensation: Number,
         otherWorkingCapital: Number,
         otherNonCashItems: Number,
-        subTotal: Number
+        total: Number
     },
     investingActivities: {
         propertyInvestments: Number,
@@ -22,15 +22,15 @@ var CashFlowSchema = new moogoose.Schema({
         intangiblesPurchases: Number,
         intangiblesSales: Number,
         otherInvestingActivities: Number,
-        subTotal: Number
-        },
+        total: Number
+    },
     financingActivities: {
         debtIssued: Number,
         debtRepayment: Number,
         commonStockRepurchased: Number,
         dividentPaid: Number,
         otherFinancingActivities: Number,
-        subTotal: Number
+        total: Number
     },
     exchangeRateEffect: Number,
     cashAtBeginningPeriod: Number,

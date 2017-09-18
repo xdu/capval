@@ -1,54 +1,29 @@
 'use strict'
 
-import fs from 'fs'
-import readline from 'readline'
-import parse from 'csv-parse'
+import express from 'express'
+import parser from 'body-parser'
 import mongoose from 'mongoose'
-import Holding from './model/holding'
-import {replace} from 'lodash'
 
-mongoose.connect('mongodb://192.168.99.100/capvar')
+import router from './router'
 
-const filename = './data/IEUS_holdings.csv'
+// Base setup
+var app = express()
 
-const reader = readline.createInterface({
-    input: fs.createReadStream(filename)
+app.use(parser.urlencoded({ extended: true }))
+app.use(parser.json())
+
+// Listen port
+var port = process.env.PORT || 4000
+
+// Database
+mongoose.connect('mongodb://192.168.99.100/capvar', {
+    useMongoClient: true,
 })
 
-let i = 1
+// Register the router
+app.use('/api', router)
 
-reader
-.on('line', (s) => {
-    let input = s.trim()
-    if (input) {
-        parse(input, {}, (err, output) => {
-            let t = output[0]
-            if (t[2] === 'Equity') {
-                let e = new Holding()
-                e.ticker        = t[0]
-                e.name          = t[1]
-                e.assetClass    = t[2]
-                e.marketValue   = replace(t[6], ',', '')
-                e.notionalValue = replace(t[7], ',', '')
-                e.sector        = t[8]
-                e.sedol         = t[9]
-                e.isin          = t[10]
-                e.exchange      = t[11]
-                e.country       = t[12]
-                e.currency      = t[14]
-                e.save((err, obj) => {
-                    if (err) {
-                        console.error(err)
-                    } else {
-                        console.log("save " + obj.ticker)
-                    }
-                })
-            }
-        })
-    }
-})
-.on('close', () => {
-    Holding.find({}, (err, entity) => {
-        console.log(entity)
-    })
+// Start the server
+app.listen(port, () => {
+    console.log("Server started on " + port)
 })
