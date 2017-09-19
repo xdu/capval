@@ -1,7 +1,7 @@
 'use strict'
 
 import express from 'express'
-import Stocks from './model/holding'
+import Stocks from './model/stock'
 
 // Router module
 var router = express.Router()

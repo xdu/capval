@@ -1,9 +1,12 @@
 'use strict'
 
 import express from 'express'
+import path from 'path'
 import parser from 'body-parser'
 import mongoose from 'mongoose'
-
+import react from 'react'
+import reactDom from 'react-dom'
+import reactRouter from 'react-router'
 import router from './router'
 
 // Base setup
@@ -19,6 +22,8 @@ var port = process.env.PORT || 4000
 mongoose.connect('mongodb://192.168.99.100/capvar', {
     useMongoClient: true,
 })
+
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Register the router
 app.use('/api', router)
