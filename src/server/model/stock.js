@@ -16,4 +16,4 @@ var StockSchema = new mongoose.Schema({
     currency: String
 })
 
-export default mongoose.model('stock', StockSchema)
+export default mongoose.model('stock', StockSchema, 'stock')
