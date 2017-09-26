@@ -23,7 +23,7 @@ mongoose.connect('mongodb://192.168.99.100/capvar', {
     useMongoClient: true,
 })
 
-app.use(express.static(path.join(__dirname, '../public')));
+app.use(express.static(path.join(__dirname, '../../public')));
 
 // Register the router
 app.use('/api', router)

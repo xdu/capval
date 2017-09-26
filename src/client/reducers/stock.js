@@ -1,9 +1,9 @@
-const stock = (state = { text: 'React' }, action) => {
+const stocks = (state = { list: [] }, action) => {
 
     switch (action.type) {
-        case 'LOAD_STOCKS_FULFILLED':
+        case 'GET_STOCKS_FULFILLED':
             return {
-                text: 'React reloaded.'
+                list: action.stocks
             }
         default:
             return state
@@ -11,4 +11,4 @@ const stock = (state = { text: 'React' }, action) => {
 
 }
 
-export default stock
+export default stocks
