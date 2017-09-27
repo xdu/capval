@@ -14,13 +14,19 @@ class StockList extends React.Component {
         this.props.load(this.state.page, this.state.size)
     }
 
+    clickStock(item) {
+        alert(JSON.stringify(item))
+    }
+
     render() {
         const rows = this.props.stocks.map((item) => {
             return (
-                <tr key={item._id}>
+                <tr key={item._id} onClick={() => this.clickStock(item.ticker)}>
                     <td>{item.ticker}</td>
-                    <td>{item.isin}</td>
                     <td>{item.name}</td>
+                    <td>{item.sector}</td>
+                    <td>{item.country}</td>
+                    <td>{item.marketValue} {item.currency}</td>
                 </tr>
             )
         })
@@ -29,8 +35,10 @@ class StockList extends React.Component {
                 <thead>
                     <tr>
                         <th>Ticker</th>
-                        <th>ISIN</th>
                         <th>Name</th>
+                        <th>Sector</th>
+                        <th>Country</th>
+                        <th>Value</th>
                     </tr>
                 </thead>
                 <tbody>{rows}</tbody>

@@ -51,4 +51,4 @@ var BalanceSheetSchema = new moogoose.Schema({
     }
 })
 
-export default moogoose.model('bs', BalanceSheetSchema)
+export default moogoose.model('bs', BalanceSheetSchema, 'bs')

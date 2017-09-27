@@ -33,4 +33,4 @@ var IncomeStatementSchema = new moogoose.Schema({
     EBITDA: Number
 })
 
-export default moogoose.model('is', IncomeStatementSchema)
+export default moogoose.model('is', IncomeStatementSchema, 'is')
