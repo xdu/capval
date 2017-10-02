@@ -15,3 +15,10 @@ export function getStocks(page, size) {
             })
     }
 } 
+
+export function setCurrent(stock) {
+    return {
+        type: 'SET_CURRENT_FULFILLED',
+        current : { ...stock }
+    }
+}

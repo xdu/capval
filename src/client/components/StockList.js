@@ -15,13 +15,13 @@ class StockList extends React.Component {
     }
 
     clickStock(item) {
-        alert(JSON.stringify(item))
+        this.props.setCurrent(item);
     }
 
     render() {
         const rows = this.props.stocks.map((item) => {
             return (
-                <tr key={item._id} onClick={() => this.clickStock(item.ticker)}>
+                <tr key={item._id} onClick={() => this.clickStock(item)}>
                     <td>{item.ticker}</td>
                     <td>{item.name}</td>
                     <td>{item.sector}</td>
@@ -49,8 +49,9 @@ class StockList extends React.Component {
 }
 
 StockList.propTypes = {
-    stocks: React.PropTypes.array,
-    load: React.PropTypes.func
+    stocks:     React.PropTypes.array,
+    load:       React.PropTypes.func,
+    setCurrent: React.PropTypes.func
 }
 
 export default StockList

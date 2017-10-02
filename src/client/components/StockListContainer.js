@@ -1,7 +1,7 @@
 'use strict'
 
 import { connect } from 'react-redux'
-import { getStocks } from '../actions/stock'
+import { getStocks, setCurrent } from '../actions/stock'
 import View from './StockList'
 
 const select = (store) => {
@@ -12,7 +12,8 @@ const select = (store) => {
 
 const actions = (dispatch) => {
     return {
-        load: (page, size) => dispatch( getStocks(page, size) )
+        load: (page, size) => dispatch( getStocks(page, size) ),
+        setCurrent: (stock) => dispatch( setCurrent(stock) )
     }
 }
 

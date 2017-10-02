@@ -39,4 +39,4 @@ var CashFlowSchema = new moogoose.Schema({
     freeCashFlow: Number
 })
 
-export default moogoose.model('cf', CashFlowSchema)
+export default moogoose.model('cf', CashFlowSchema, 'cf')
