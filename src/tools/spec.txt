@@ -1,0 +1,24 @@
+BS
+Total assets
+Total liabilities
+Total stockholders' equity
+
+CF
+Net cash provided by operating activities
+Net cash used for investing activities
+Net cash provided by (used for) financing activities
+Cash at beginning of period
+Cash at end of period
+
+IS
+Total net revenue
+Net income
+Earnings per share
+Basic
+Diluted
+Weighted average shares outstanding
+Basic
+Diluted
+
+
+TTM replace by sysdate
