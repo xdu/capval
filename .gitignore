@@ -1,4 +1,4 @@
 node_modules
-data
+data/*.CSV
 package-lock.json
 public/bundle.js
