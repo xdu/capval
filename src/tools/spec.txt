@@ -20,5 +20,63 @@ Weighted average shares outstanding
 Basic
 Diluted
 
-
 TTM replace by sysdate
+
+What is the difference between revenue and sales?
+http://www.investopedia.com/ask/answers/122214/what-difference-between-revenue-and-sales.asp
+
+Key ratios
+
+Revenue
+	http://www.investopedia.com/terms/r/revenue.asp
+Gross Margin
+	http://www.investopedia.com/terms/g/grossmargin.asp
+COGS (Cost of Good Sold)
+	http://www.investopedia.com/terms/c/cogs.asp
+Operating Income (EBIT)
+	http://www.investopedia.com/terms/o/operatingincome.asp
+Operating Margin
+	http://www.investopedia.com/terms/o/operatingmargin.asp
+	operating margin includes all expenses except for interest paid on outstanding debt and all taxes the company is liable for paying.
+Net Income (NI)
+	http://www.investopedia.com/terms/n/netincome.asp
+Earnings Per Share
+	http://www.investopedia.com/terms/e/eps.asp
+Payout Ratio
+	http://www.investopedia.com/terms/p/payoutratio.asp
+	For example, a payout ratio of 20% means the company pays out 20% of company distributions. If company A has $10
+	million in net income, it pays out $2 million to shareholders.
+Book Value Per Share
+	http://www.investopedia.com/terms/b/bookvaluepercommon.asp
+Operating Cash Flow (OCF)
+	http://www.investopedia.com/terms/o/operatingcashflow.asp
+Days Sales Outstanding 
+	DSO http://www.investopedia.com/terms/d/dso.asp
+Days Payable Outstanding
+	DPO http://www.investopedia.com/terms/d/dpo.asp
+Receivables Turnover
+	http://www.investopedia.com/terms/r/receivableturnoverratio.asp
+Inventory Turnover
+	http://www.investopedia.com/terms/i/inventoryturnover.asp
+Fixed Assets Turnover
+	http://www.investopedia.com/terms/f/fixed-asset-turnover.asp
+Current Ratio (Working Capital Ratio)
+	http://www.investopedia.com/terms/c/currentratio.asp
+Quick Ratio
+	http://www.investopedia.com/terms/q/quickratio.asp
+Financial Levarage 
+	http://www.investopedia.com/terms/l/leverageratio.asp
+
+Revenue Growth Year over Year
+Operating Income Growth Year over Year
+Net Income Growth Year over Year
+EPS Growth Year over Year
+	
+Lexicon (Mercury Web Parser API)
+		
+Investor relationship URL
+	...
+
+Financial reports 
+	...
+
