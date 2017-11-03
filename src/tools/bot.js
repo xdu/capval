@@ -1,43 +1,58 @@
 'use strict'
 
-import qs from 'querystring'
-import fs from 'fs'
-import 'isomorphic-fetch'
+import fetchCSV from '../server/service/MorningStarBot'
+import Stock from '../server/model/stock'
+import mongoose from 'mongoose'
 
-const baseurl = 'http://financials.morningstar.com/ajax/ReportProcess4CSV.html?'
+// Database
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://192.168.99.100/capvar', {
+    useMongoClient: true,
+})
 
-export default function fetchTickerFiles(ticker) { 
+Stock.find({ 'ticker': /^[A-Z]/, 'morningstarState': null }).sort({ 'ticker': 1 }).exec((err, records) => {
 
-    const reports = ['is', 'bs', 'cf']
+    var promise = Promise.resolve();
 
-    for (var r in reports) {
-        let delay = Math.random() * 10000
-        console.log("Fetch " + reports[r] + ' report in ' + delay + " ms")
+    let i = 0;
+    for(const item of records) {
+        console.log(`Download ${item.ticker} = ${item.name}`)
 
-        setTimeout(_getSingleFile.bind(this, ticker, reports[r]), delay)
+        if (item.morningstarTicker == null) {
+            item.morningstarTicker = item.ticker
+        }
+
+        promise = promise
+            .then(() => fetchAll(item))
+            .then(() => item.save((e, obj) => {
+                if (e) console.log(e)
+            }))
     }
 
-}
-
-var _getSingleFile = function(ticker, type) {
-
-    const query = qs.stringify({
-        t: ticker,
-        reportType: type,
-        period: 12,
-        dataType: 'A',
-        order: 'asc',
-        columnYear: 10,
-        number: 1
+    promise.then(() => {
+        console.log("All downloads are ended.")
+        mongoose.disconnect()
     })
-    let url = baseurl + query
-    console.log(url)
+})
 
-    fetch(url)
-        .then(res => {
-            const dest = fs.createWriteStream('./data/' + ticker.toUpperCase() + '.' + type.toUpperCase() + '.CSV')
-            res.body.pipe(dest)
+const fetchAll = (stock) => {
+        const ticker = stock.morningstarTicker
+
+        return new Promise( (resolve, reject) => { 
+
+            fetchCSV(ticker, 'is')
+                .then(() => fetchCSV(ticker, 'cf'))
+                .then(() => fetchCSV(ticker, 'bs'))
+                .then(() => {
+                    stock.morningstarState = 1
+                    resolve(ticker)
+                })
+                .catch((t) => {
+                    console.log(`Ticker ${t} download failed.`)
+
+                    stock.morningstarState = -1
+                    resolve(ticker)
+                })
         })
-}
-
-fetchTickerFiles('TEMN')
+    
+    }
