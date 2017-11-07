@@ -5,6 +5,44 @@ import fs from 'fs'
 import 'isomorphic-fetch'
 
 const baseurl = 'http://financials.morningstar.com/ajax/ReportProcess4CSV.html'
+const ratioURL = 'http://financials.morningstar.com/ajax/exportKR2CSV.html?t='
+
+const fetchRatio = (ticker) => {
+    
+        // Build the name of the file to write
+        let filename = `${ticker.toUpperCase()}.KR.CSV`
+        console.log(filename)
+    
+        // Check if the file is downloaded already
+        if (fs.existsSync(filename)) { 
+            return Promise.resolve(ticker)
+        }
+
+        let url = ratioURL + ticker
+        console.log(url)
+    
+        return new Promise((resolve, reject) => {
+    
+            fetch(url).then(res => {
+    
+                // Write the file
+                const dest = fs.createWriteStream(filename)
+                res.body.pipe(dest)
+    
+                // Wait a few seconds, then resolve the promise
+                res.body.on('end', () => {
+                    setTimeout(() => { 
+                        resolve(ticker) 
+                    }, Math.random() * 5000)
+                })
+    
+                res.body.on('error', (err) => {
+                    fs.unlinkSync(filename)
+                    reject(ticker)
+                })
+            })
+        })
+    }
 
 const fetchCSV = (ticker, type) => {
 
@@ -53,4 +91,4 @@ const fetchCSV = (ticker, type) => {
     })
 }
 
-export default fetchCSV;
+export { fetchCSV, fetchRatio };

@@ -1,6 +1,6 @@
 'use strict'
 
-import fetchCSV from '../server/service/MorningStarBot'
+import { fetchCSV, fetchRatio } from '../server/service/MorningStarBot'
 import Stock from '../server/model/stock'
 import mongoose from 'mongoose'
 
@@ -10,8 +10,8 @@ mongoose.connect('mongodb://192.168.99.100/capvar', {
     useMongoClient: true,
 })
 
-Stock.find({ 'ticker': /^[A-Z]/, 'morningstarState': null }).sort({ 'ticker': 1 }).exec((err, records) => {
-
+//Stock.find({ 'ticker': /^[A-Z]/, 'morningstarState': null }).sort({ 'ticker': 1 }).exec((err, records) => {
+Stock.find({ 'ticker': 'A3M' }).sort({ 'ticker': 1 }).exec((err, records) => {
     var promise = Promise.resolve();
 
     let i = 0;
@@ -43,6 +43,7 @@ const fetchAll = (stock) => {
             fetchCSV(ticker, 'is')
                 .then(() => fetchCSV(ticker, 'cf'))
                 .then(() => fetchCSV(ticker, 'bs'))
+                .then(() => fetchRatio(ticker))
                 .then(() => {
                     stock.morningstarState = 1
                     resolve(ticker)
