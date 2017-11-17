@@ -1,5 +1,6 @@
 node_modules
 data/*.CSV
+dist/*
 package-lock.json
 public/bundle.js
 *.CSV

@@ -50,6 +50,11 @@ Book Value Per Share
 	http://www.investopedia.com/terms/b/bookvaluepercommon.asp
 Operating Cash Flow (OCF)
 	http://www.investopedia.com/terms/o/operatingcashflow.asp
+Cap Spending
+	http://www.investopedia.com/terms/c/capitalexpenditure.asp
+	Spending for long-term assets such as factories, equipment, machinery, and buildings that permits the production of more goods and services in future years.
+Free Cash Flow (FCF)
+	http://www.investopedia.com/terms/f/freecashflow.asp
 Days Sales Outstanding 
 	DSO http://www.investopedia.com/terms/d/dso.asp
 Days Payable Outstanding
