@@ -10,7 +10,7 @@ router.route('/stocks').get( getStocks )
 
 router.get('/', (req, res) => {
     res.json({
-        message: "router"
+        message: "hello express"
     })
 })
 
